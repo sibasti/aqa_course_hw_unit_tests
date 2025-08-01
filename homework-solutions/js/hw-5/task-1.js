@@ -7,9 +7,10 @@
 let evenNumbersResult = '';
 
     for( let i = 10; i >= 0; i = i-2) {
-        console.log(i);
+        evenNumbersResult += i;
+        if (i !== 0) evenNumbersResult += '-';
     }
-
+console.log(evenNumbersResult);
 /**
  * Создать строку из 5 строк с увеличивающимся количеством смайликов ":)".
  * Переменная для результата `smilePatternResult` уже создана и содержит пустую строку.
@@ -22,13 +23,15 @@ let evenNumbersResult = '';
  */
 
 let smilePatternResult = '';
+let line = '';
     for(let i = 1; i <= 5; i++) {
-        let line = '';
-        for(let j = 1; j <= i; j++) {
-            line += ":)";
-            }
-        console.log(line);
-    }
+        line += ':)';
+        smilePatternResult += line; 
+        if (i !== 5) {
+            smilePatternResult += '\n';
+        }
+     }
+        console.log(smilePatternResult);
 
 /**
  * Заменить все пробелы в переменной text на "1".
