@@ -7,12 +7,13 @@
 
   Значение добавьте в массив 'forOf' 
 */
-const array = [1,2,3,4,5,6,7,8,9,10];
 const forOf =[];
+const array = [1,2,3,4,5,6,7,8,9,10];
+
 
   for (let num of array) {
     if (num %2 === 0 ) {
-      forOf.push(num * 2);
+      forOf.push(num ** 2);
   } else {
       forOf.push(num ** 3);
   }
