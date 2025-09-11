@@ -1,9 +1,9 @@
 let num1: number = 42;
 let str: string = 'Hello, TypeScript!';
 let isComplete: boolean = true;
-let numbers: number[] = [1,2,3,4,5];
-let cities: string[] = ['Minsk', 'Warsaw', 'London'];
-let person : {name: string; age: number; city: string} = {
+const numbers: number[] = [1,2,3,4,5];
+const cities: string[] = ['Minsk', 'Warsaw', 'London'];
+const person : {name: string; age: number; city: string} = {
     name:'Alice',
     age: 30,
     city: 'Minsk',
@@ -17,19 +17,19 @@ type User ={
 
 type Grade = 'junior' | 'middle' | 'senior';
 
-interface Car{
+interface ICar{
     brand: string;
     model: string;
     year?: number;
 };
 
-interface Address{
+interface IAddress{
     street: string;
     city: string;
     zipCode: number;
 };
 
-interface FullAddress extends Address{
+interface IFullAddress extends IAddress{
     country: string;
 };
 
