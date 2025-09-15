@@ -57,3 +57,6 @@ const product: DiscountedProduct ={
 };
 console.log(calculateDiscount(product));
 
+
+
+

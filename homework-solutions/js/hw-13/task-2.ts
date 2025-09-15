@@ -25,6 +25,3 @@ console.log(validatePassword("PASSWORD123"));
 console.log(validatePassword("Password"));
 console.log(validatePassword("      "));
 console.log(validatePassword("Pass 123"));
-
-
-
