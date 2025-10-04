@@ -1,0 +1,9 @@
+#submit
+.txt
+(//*[@class="txt"])[1]
+//*[text()="Remove comment"]
+//*[contains(@class, 'one')][1]
+[multitag2 = "on"]
+div > .content
+span.content, button.content
+//*[@id="submit"]/ancestor::body
